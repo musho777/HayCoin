@@ -1,10 +1,9 @@
-import { WelcomeScreen } from './src/screens/welcome/WelcomeScreen';
-import { ChooseLanguageScreen } from './src/screens/welcome/ChooseLanguageScreen';
+import { Navigation } from './src/Navigation/Navigation';
+import 'react-native-gesture-handler'
 function App() {
 
   return (
-    // <WelcomeScreen />
-    <ChooseLanguageScreen />
+    <Navigation />
   );
 }
 

@@ -32,5 +32,13 @@ export const Styles = StyleSheet.create({
         bottom: 0,
         width: '100%',
         paddingHorizontal: 40,
+    },
+    nevayRegular: {
+        fontSize: 14,
+        fontWeight: '400',
+        fontFamily: 'Montserrat',
+        color: Colors.navy_color,
+        textAlign: 'center',
+
     }
 })

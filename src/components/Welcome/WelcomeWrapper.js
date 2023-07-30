@@ -3,7 +3,7 @@ import { Logo } from "../../../assets/svg/svgs"
 import { Styles } from "../../../Styles/Styles"
 import { Button } from "../Button/Button"
 
-export const WelcomeWrapper = ({ children, buttonText }) => {
+export const WelcomeWrapper = ({ children, buttonText, onPress }) => {
     return <ImageBackground
         style={styles.block}
         source={require('../../../assets/img/Welcome.jpg')}
@@ -16,7 +16,7 @@ export const WelcomeWrapper = ({ children, buttonText }) => {
                 {children}
             </View>
             <View style={Styles.buttonWrapper}>
-                <Button title={buttonText} />
+                <Button title={buttonText} onPress={onPress} />
             </View>
         </SafeAreaView>
     </ImageBackground>
