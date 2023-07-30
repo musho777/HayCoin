@@ -15,9 +15,9 @@ export const WelcomeWrapper = ({ children, buttonText, onPress }) => {
             <View style={[Styles.wrapper]}>
                 {children}
             </View>
-            <View style={Styles.buttonWrapper}>
+            {buttonText && <View style={Styles.buttonWrapper}>
                 <Button title={buttonText} onPress={onPress} />
-            </View>
+            </View>}
         </SafeAreaView>
     </ImageBackground>
 }

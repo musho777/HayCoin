@@ -4,8 +4,8 @@ import { WelcomeWrapper } from "../../components/Welcome/WelcomeWrapper"
 import { ButtonWhiteIcone } from "../../components/ButtonWhiteIcone"
 import { World } from "../../../assets/svg/svgs"
 
-export const ChooseLanguageScreen = () => {
-    return <WelcomeWrapper buttonText='Confirm'>
+export const ChooseLanguageScreen = ({ navigation }) => {
+    return <WelcomeWrapper buttonText='Confirm' onPress={() => navigation.navigate('SignUpScreen')}>
         <Text style={styles.text}>Choose your language to continue.</Text>
         <ButtonWhiteIcone marginV={25} svg={<World />} title={'Choose your language'} />
     </WelcomeWrapper>

@@ -20,11 +20,33 @@ export const Styles = StyleSheet.create({
         color: Colors.white_color,
         textAlign: 'center',
     },
+    white700: {
+        fontSize: 18,
+        fontWeight: '700',
+        fontFamily: 'Montserrat',
+        color: Colors.white_color,
+        textAlign: 'center',
+    },
+    white40012: {
+        fontSize: 12,
+        fontWeight: '400',
+        fontFamily: 'Montserrat',
+        color: Colors.white_color,
+        textAlign: 'center',
+        lineHeight: 18
+    },
     redBold: {
         fontSize: 14,
         fontWeight: 'bold',
         fontFamily: 'Montserrat',
         color: Colors.red_color,
+        textAlign: 'center',
+    },
+    black70014: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        fontFamily: '700',
+        color: 'rgba(0, 0, 0, 0.70)',
         textAlign: 'center',
     },
     buttonWrapper: {

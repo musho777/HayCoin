@@ -3,7 +3,7 @@ import { WelcomeWrapper } from "../../components/Welcome/WelcomeWrapper"
 import { Styles } from "../../../Styles/Styles"
 
 export const WelcomeScreen = ({ navigation }) => {
-    return <WelcomeWrapper buttonText={'Continue'} onPress={() => navigation.navigate('SliderScreen')}>
+    return <WelcomeWrapper buttonText={'Continue'} onPress={() => navigation.navigate('ChooseLanguageScreen')}>
         <Text style={Styles.title}>Welcome!</Text>
     </WelcomeWrapper>
 }

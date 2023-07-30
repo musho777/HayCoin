@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { WelcomeScreen } from '../screens/welcome/WelcomeScreen';
 import { ChooseLanguageScreen } from '../screens/welcome/ChooseLanguageScreen';
 import SliderScreen from '../screens/welcome/SliderScreen';
+import { SignUpScreen } from '../screens/signUp/SignUpScreen';
 
 
 
@@ -26,6 +27,13 @@ export const Navigation = ({ }) => {
             <Stack.Screen
                 name="ChooseLanguageScreen"
                 component={ChooseLanguageScreen}
+                options={{
+                    headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="SignUpScreen"
+                component={SignUpScreen}
                 options={{
                     headerShown: false
                 }}

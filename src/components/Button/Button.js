@@ -2,9 +2,19 @@ import { StyleSheet, TouchableOpacity, Text } from "react-native"
 import { Colors } from "../../../Styles/Colors"
 import { Styles } from "../../../Styles/Styles"
 
-export const Button = ({ title, onPress }) => {
-    return <TouchableOpacity style={styles.button} onPress={onPress}>
-        <Text style={Styles.whiteBold}>{title}</Text>
+export const Button = ({ title, onPress, mb, white }) => {
+    return <TouchableOpacity
+        style={
+            [styles.button,
+            { marginBottom: mb },
+            white && { backgroundColor: Colors.white_color }
+            ]}
+        onPress={onPress}>
+        <Text style={[
+            Styles.whiteBold,
+            white && { color: Colors.red_color }
+
+        ]}>{title}</Text>
     </TouchableOpacity>
 }
 const styles = StyleSheet.create({
